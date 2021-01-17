@@ -5,7 +5,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./Header";
 
-const menusArr = [
+const hodHeader = [
   { img: `${process.env.PUBLIC_URL}/assets/images/request.svg`, text: "Approve LOR Request", alt: "img" },
   { img: `${process.env.PUBLIC_URL}/assets/images/report.svg`, text: "Report", alt: "img" },
   { img: `${process.env.PUBLIC_URL}/assets/images/create user.svg`, text: "User Creation", alt: "img" },
@@ -13,9 +13,30 @@ const menusArr = [
   { img: `${process.env.PUBLIC_URL}/assets/images/logout-icon.svg`, text: "Logout", alt: "img" },
 ];
 
+const tprHeader = [
+  { img: `${process.env.PUBLIC_URL}/assets/images/request.svg`, text: "Approve LOR Request", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/report.svg`, text: "Report", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/logout-icon.svg`, text: "Logout", alt: "img" },
+];
+
+const studentHeader = [
+  { img: `${process.env.PUBLIC_URL}/assets/images/home.svg`, text: "Home", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/request.svg`, text: "LOR Request", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/card.svg`, text: "Admission Card", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/draft.svg`, text: "LOR Draft Status", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/logout-icon.svg`, text: "Logout", alt: "img" },
+];
+
+const facultyHeader = [
+  { img: `${process.env.PUBLIC_URL}/assets/images/request.svg`, text: "LOR Request Form", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/draft.svg`, text: "LOR Draft Status", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/report.svg`, text: "Report", alt: "img" },
+  { img: `${process.env.PUBLIC_URL}/assets/images/logout-icon.svg`, text: "Logout", alt: "img" },
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <Header menus={menusArr} />
+    <Header menus={studentHeader} />
   </React.StrictMode>,
   document.getElementById("root")
 );
